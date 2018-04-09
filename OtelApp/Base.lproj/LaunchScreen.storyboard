@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="otel_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Yhi-Zb-1RW">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="242" id="mOD-Ae-CpH"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ot" translatesAutoresizingMaskIntoConstraints="NO" id="8B9-JQ-94F">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="VEp-A5-yrY"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tm" translatesAutoresizingMaskIntoConstraints="NO" id="dYa-xx-V3T">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="61u-hg-Rrr"/>
+                                    <constraint firstAttribute="height" constant="38" id="x8R-63-iYS"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Yhi-Zb-1RW" secondAttribute="trailing" id="DxY-jF-EM3"/>
+                            <constraint firstItem="Yhi-Zb-1RW" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="17" id="MXq-Px-gD6"/>
+                            <constraint firstItem="dYa-xx-V3T" firstAttribute="top" secondItem="Yhi-Zb-1RW" secondAttribute="bottom" constant="11" id="NO1-5U-bY1"/>
+                            <constraint firstItem="Yhi-Zb-1RW" firstAttribute="centerX" secondItem="dYa-xx-V3T" secondAttribute="centerX" id="UEN-nM-pIP"/>
+                            <constraint firstItem="8B9-JQ-94F" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="22" id="ULb-As-l3P"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8B9-JQ-94F" secondAttribute="trailing" constant="29" id="VAB-06-LDU"/>
+                            <constraint firstItem="Yhi-Zb-1RW" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="W41-ot-lyJ"/>
+                            <constraint firstAttribute="bottom" secondItem="8B9-JQ-94F" secondAttribute="bottom" constant="10" id="j75-UC-y1t"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="77.599999999999994" y="33.733133433283363"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ot" width="501" height="35"/>
+        <image name="otel_Logo" width="1024" height="1024"/>
+        <image name="tm" width="238" height="132"/>
+    </resources>
+</document>

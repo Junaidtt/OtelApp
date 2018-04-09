@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "6e0daf93d2830e6e6c0570846dc6abf5"
+build_time: [551525206, 821130000]
+inputs:
+  "/Users/sunilvg/Desktop/updation/OtelApp/Pods/SwiftyJSON/Source/SwiftyJSON.swift": [551258997, 0]

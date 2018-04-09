@@ -1,0 +1,6 @@
+framework module Pods_OtelApp {
+  umbrella header "Pods-OtelApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,23 @@
+PODS:
+  - DLRadioButton (1.4.9)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SVProgressHUD (2.0.3)
+  - SwiftyJSON (3.1.1)
+
+DEPENDENCIES:
+  - DLRadioButton (~> 1.4)
+  - SDWebImage
+  - SVProgressHUD
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  DLRadioButton: 7bb8a6e3768b572469ace553391ab4d2af6f9c19
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
+
+PODFILE CHECKSUM: 5b482b111c9fe65aca81a75d12a70e1fd95d4b54
+
+COCOAPODS: 1.1.0.rc.3

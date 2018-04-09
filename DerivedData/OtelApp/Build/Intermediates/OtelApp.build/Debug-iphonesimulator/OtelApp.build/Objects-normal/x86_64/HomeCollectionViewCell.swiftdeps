@@ -1,0 +1,204 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "HomeCollectionViewCell"
+provides-nominal:
+- "C7OtelApp22HomeCollectionViewCell"
+provides-member:
+- ["C7OtelApp22HomeCollectionViewCell", ""]
+provides-dynamic-lookup:
+- "itemImage"
+- "itemLabel"
+depends-top-level:
+- "HomeCollectionViewCell"
+- "UILabel"
+- "UIImageView"
+- "UICollectionViewCell"
+depends-member:
+- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "itemImage"]
+- ["Ps9AnyObject", "itemLabel"]
+- ["Ps9AnyObject", ""]
+- !private ["PSo15CALayerDelegate", "init"]
+- ["PSo15CALayerDelegate", "itemImage"]
+- ["PSo15CALayerDelegate", "itemLabel"]
+- ["PSo15CALayerDelegate", ""]
+- ["VSC6CGRect", "deinit"]
+- !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "itemImage"]
+- ["Ps7CVarArg", "itemLabel"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "itemImage"]
+- ["Ps28CustomDebugStringConvertible", "itemLabel"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "itemImage"]
+- ["Ps23CustomStringConvertible", "itemLabel"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "itemImage"]
+- ["Ps9Equatable", "itemLabel"]
+- ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "itemImage"]
+- ["Ps8Hashable", "itemLabel"]
+- ["Ps8Hashable", ""]
+- ["C7OtelApp22HomeCollectionViewCell", "UIImageView"]
+- ["C7OtelApp22HomeCollectionViewCell", "UILabel"]
+- ["C7OtelApp22HomeCollectionViewCell", "deinit"]
+- ["C7OtelApp22HomeCollectionViewCell", "init"]
+- ["C7OtelApp22HomeCollectionViewCell", "itemImage"]
+- ["C7OtelApp22HomeCollectionViewCell", "itemLabel"]
+- ["SQ", "deinit"]
+- ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "itemImage"]
+- ["PSo8NSCoding", "itemLabel"]
+- ["PSo8NSCoding", ""]
+- ["CSo8NSObject", "UIImageView"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "itemImage"]
+- ["CSo8NSObject", "itemLabel"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "itemImage"]
+- ["PSo16NSObjectProtocol", "itemLabel"]
+- ["PSo16NSObjectProtocol", ""]
+- ["Sq", "deinit"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", "itemImage"]
+- ["PSo29UIAccessibilityIdentification", "itemLabel"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- !private ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", "itemImage"]
+- ["PSo12UIAppearance", "itemLabel"]
+- ["PSo12UIAppearance", ""]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "itemImage"]
+- ["PSo21UIAppearanceContainer", "itemLabel"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["CSo24UICollectionReusableView", "UIImageView"]
+- ["CSo24UICollectionReusableView", "UILabel"]
+- ["CSo24UICollectionReusableView", "init"]
+- ["CSo24UICollectionReusableView", "itemImage"]
+- ["CSo24UICollectionReusableView", "itemLabel"]
+- ["CSo20UICollectionViewCell", "UIImageView"]
+- ["CSo20UICollectionViewCell", "UILabel"]
+- ["CSo20UICollectionViewCell", "deinit"]
+- ["CSo20UICollectionViewCell", "init"]
+- ["CSo20UICollectionViewCell", "itemImage"]
+- ["CSo20UICollectionViewCell", "itemLabel"]
+- ["CSo20UICollectionViewCell", ""]
+- !private ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", "itemImage"]
+- ["PSo17UICoordinateSpace", "itemLabel"]
+- ["PSo17UICoordinateSpace", ""]
+- !private ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", "itemImage"]
+- ["PSo13UIDynamicItem", "itemLabel"]
+- ["PSo13UIDynamicItem", ""]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "itemImage"]
+- ["PSo18UIFocusEnvironment", "itemLabel"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "init"]
+- ["PSo11UIFocusItem", "itemImage"]
+- ["PSo11UIFocusItem", "itemLabel"]
+- ["PSo11UIFocusItem", ""]
+- ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "itemImage"]
+- ["CSo11UIResponder", "itemLabel"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "itemImage"]
+- ["PSo30UIResponderStandardEditActions", "itemLabel"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "itemImage"]
+- ["PSo18UITraitEnvironment", "itemLabel"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "UIImageView"]
+- ["CSo6UIView", "UILabel"]
+- ["CSo6UIView", "init"]
+- ["CSo6UIView", "itemImage"]
+- ["CSo6UIView", "itemLabel"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "itemImage"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "itemLabel"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
+- !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "itemImage"]
+- ["Ps9_Hashable", "itemLabel"]
+- ["Ps9_Hashable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- "PSo15CALayerDelegate"
+- "VSC6CGRect"
+- "Ps7CVarArg"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "C7OtelApp22HomeCollectionViewCell"
+- "SQ"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "Sq"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "CSo24UICollectionReusableView"
+- "CSo20UICollectionViewCell"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo11UIFocusItem"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "Ps37_DefaultCustomPlaygroundQuickLookable"
+- "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/sunilvg/Desktop/updation/OtelApp/DerivedData/OtelApp/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIView+WebCacheOperation.h"
+- "/Users/sunilvg/Desktop/updation/OtelApp/DerivedData/OtelApp/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImageView+WebCache.h"
+- "/Users/sunilvg/Desktop/updation/OtelApp/DerivedData/OtelApp/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImageView+HighlightedWebCache.h"
+- "/Users/sunilvg/Desktop/updation/OtelApp/DerivedData/OtelApp/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
+- "/Users/sunilvg/Desktop/updation/OtelApp/DerivedData/OtelApp/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+GIF.h"
+- "/Users/sunilvg/Desktop/updation/OtelApp/DerivedData/OtelApp/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIButton+WebCache.h"
+- "/Users/sunilvg/Desktop/updation/OtelApp/DerivedData/OtelApp/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImagePrefetcher.h"
+- "/Users/sunilvg/Desktop/updation/OtelApp/DerivedData/OtelApp/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageManager.h"
+- "/Users/sunilvg/Desktop/updation/OtelApp/DerivedData/OtelApp/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderOperation.h"
+- "/Users/sunilvg/Desktop/updation/OtelApp/DerivedData/OtelApp/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageOperation.h"
+- "/Users/sunilvg/Desktop/updation/OtelApp/DerivedData/OtelApp/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloader.h"
+- "/Users/sunilvg/Desktop/updation/OtelApp/DerivedData/OtelApp/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDecoder.h"
+- "/Users/sunilvg/Desktop/updation/OtelApp/DerivedData/OtelApp/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
+- "/Users/sunilvg/Desktop/updation/OtelApp/DerivedData/OtelApp/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCache.h"
+- "/Users/sunilvg/Desktop/updation/OtelApp/DerivedData/OtelApp/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
+- "/Users/sunilvg/Desktop/updation/OtelApp/DerivedData/OtelApp/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
+- "/Users/sunilvg/Desktop/updation/OtelApp/DerivedData/OtelApp/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
+- "/Users/sunilvg/Desktop/updation/OtelApp/DerivedData/OtelApp/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Modules/SwiftyJSON.swiftmodule/x86_64.swiftmodule"
+- "/Users/sunilvg/Desktop/updation/OtelApp/DerivedData/OtelApp/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
+- "/Users/sunilvg/Desktop/updation/OtelApp/DerivedData/OtelApp/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-umbrella.h"
+- "/Users/sunilvg/Desktop/updation/OtelApp/DerivedData/OtelApp/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Modules/module.modulemap"
+- "/Users/sunilvg/Desktop/updation/OtelApp/DerivedData/OtelApp/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
+- "/Users/sunilvg/Desktop/updation/OtelApp/DerivedData/OtelApp/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
+- "/Users/sunilvg/Desktop/updation/OtelApp/DerivedData/OtelApp/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
+- "/Users/sunilvg/Desktop/updation/OtelApp/DerivedData/OtelApp/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
+- "/Users/sunilvg/Desktop/updation/OtelApp/DerivedData/OtelApp/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
+- "/Users/sunilvg/Desktop/updation/OtelApp/DerivedData/OtelApp/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+interface-hash: "241eac7ba3da5af6d6a353d0f6c0585f"

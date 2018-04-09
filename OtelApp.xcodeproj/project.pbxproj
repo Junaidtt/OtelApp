@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB0D13171EF3A4950045B9B1 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D13161EF3A4950045B9B1 /* CardView.swift */; };
+		BB0D131B1EF3A91F0045B9B1 /* CheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D131A1EF3A91F0045B9B1 /* CheckInViewController.swift */; };
+		BB0D13211EF3E0220045B9B1 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D13201EF3E0220045B9B1 /* AppConfig.swift */; };
+		BB1E35F11EFD185D001810F0 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1E35F01EFD185D001810F0 /* FeedbackViewController.swift */; };
+		BB247F601EFBC9AE00D07640 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB247F5F1EFBC9AE00D07640 /* ProfileViewController.swift */; };
+		BB36A37A1EF906F7007148A1 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB36A3791EF906F7007148A1 /* Offer.swift */; };
+		BB36A37C1EF937C5007148A1 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB36A37B1EF937C4007148A1 /* HomeCollectionViewCell.swift */; };
+		BB36A3801EF93837007148A1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB36A37F1EF93837007148A1 /* HomeViewController.swift */; };
+		BB7510831EF5115800508980 /* OffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7510821EF5115800508980 /* OffersViewController.swift */; };
+		BB7510851EF5138800508980 /* OfferTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7510841EF5138800508980 /* OfferTableViewCell.swift */; };
+		BB7510891EF51C2C00508980 /* ServiceCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7510881EF51C2C00508980 /* ServiceCaller.swift */; };
+		BBC411DB1EF265E400DDF316 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC411DA1EF265E400DDF316 /* AppDelegate.swift */; };
+		BBC411DD1EF265E400DDF316 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC411DC1EF265E400DDF316 /* LoginViewController.swift */; };
+		BBC411E01EF265E400DDF316 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC411DE1EF265E400DDF316 /* Main.storyboard */; };
+		BBC411E31EF265E400DDF316 /* OtelApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BBC411E11EF265E400DDF316 /* OtelApp.xcdatamodeld */; };
+		BBC411E51EF265E400DDF316 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC411E41EF265E400DDF316 /* Assets.xcassets */; };
+		BBC411E81EF265E400DDF316 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC411E61EF265E400DDF316 /* LaunchScreen.storyboard */; };
+		BBC411F31EF2892400DDF316 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC411F21EF2892400DDF316 /* User.swift */; };
+		BBC411F61EF28AE900DDF316 /* AsyncUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC411F51EF28AE900DDF316 /* AsyncUser.swift */; };
+		FFFB8C5A1EFF1CEDECFE8736 /* Pods_OtelApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1411A9BA4D1B084DE3B76D /* Pods_OtelApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2A1411A9BA4D1B084DE3B76D /* Pods_OtelApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OtelApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C13A307FE847DDEF78F08E1 /* Pods-OtelApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OtelApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-OtelApp/Pods-OtelApp.release.xcconfig"; sourceTree = "<group>"; };
+		71B6014B0729DCD46D2CC6FB /* Pods-OtelApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OtelApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OtelApp/Pods-OtelApp.debug.xcconfig"; sourceTree = "<group>"; };
+		BB0D13161EF3A4950045B9B1 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		BB0D131A1EF3A91F0045B9B1 /* CheckInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInViewController.swift; sourceTree = "<group>"; };
+		BB0D13201EF3E0220045B9B1 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		BB1E35F01EFD185D001810F0 /* FeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
+		BB247F5F1EFBC9AE00D07640 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		BB36A3791EF906F7007148A1 /* Offer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
+		BB36A37B1EF937C4007148A1 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		BB36A37F1EF93837007148A1 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BB7510821EF5115800508980 /* OffersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffersViewController.swift; sourceTree = "<group>"; };
+		BB7510841EF5138800508980 /* OfferTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferTableViewCell.swift; sourceTree = "<group>"; };
+		BB7510881EF51C2C00508980 /* ServiceCaller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceCaller.swift; sourceTree = "<group>"; };
+		BBC411D71EF265E400DDF316 /* OtelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OtelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBC411DA1EF265E400DDF316 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BBC411DC1EF265E400DDF316 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = OtelApp/LoginViewController.swift; sourceTree = "<group>"; };
+		BBC411DF1EF265E400DDF316 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BBC411E21EF265E400DDF316 /* OtelApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OtelApp.xcdatamodel; sourceTree = "<group>"; };
+		BBC411E41EF265E400DDF316 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BBC411E71EF265E400DDF316 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BBC411E91EF265E400DDF316 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBC411F21EF2892400DDF316 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BBC411F51EF28AE900DDF316 /* AsyncUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncUser.swift; sourceTree = "<group>"; };
+		BBC411F91EF298CF00DDF316 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBC411D41EF265E400DDF316 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFFB8C5A1EFF1CEDECFE8736 /* Pods_OtelApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		016A3E393630B4DD9A2D85D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71B6014B0729DCD46D2CC6FB /* Pods-OtelApp.debug.xcconfig */,
+				6C13A307FE847DDEF78F08E1 /* Pods-OtelApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		71929E2D4EBE29E7098757AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBC411F91EF298CF00DDF316 /* CoreData.framework */,
+				2A1411A9BA4D1B084DE3B76D /* Pods_OtelApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BBC411CE1EF265E400DDF316 = {
+			isa = PBXGroup;
+			children = (
+				BBC411F41EF28ACA00DDF316 /* Plugins */,
+				BBC411F11EF2750A00DDF316 /* Controller */,
+				BBC411F01EF274FC00DDF316 /* View */,
+				BBC411EF1EF274F300DDF316 /* Model */,
+				BBC411D91EF265E400DDF316 /* OtelApp */,
+				BBC411D81EF265E400DDF316 /* Products */,
+				016A3E393630B4DD9A2D85D2 /* Pods */,
+				71929E2D4EBE29E7098757AD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BBC411D81EF265E400DDF316 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBC411D71EF265E400DDF316 /* OtelApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBC411D91EF265E400DDF316 /* OtelApp */ = {
+			isa = PBXGroup;
+			children = (
+				BBC411DA1EF265E400DDF316 /* AppDelegate.swift */,
+				BBC411DE1EF265E400DDF316 /* Main.storyboard */,
+				BBC411E41EF265E400DDF316 /* Assets.xcassets */,
+				BBC411E61EF265E400DDF316 /* LaunchScreen.storyboard */,
+				BBC411E91EF265E400DDF316 /* Info.plist */,
+				BBC411E11EF265E400DDF316 /* OtelApp.xcdatamodeld */,
+			);
+			path = OtelApp;
+			sourceTree = "<group>";
+		};
+		BBC411EF1EF274F300DDF316 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BBC411F21EF2892400DDF316 /* User.swift */,
+				BB36A3791EF906F7007148A1 /* Offer.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BBC411F01EF274FC00DDF316 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB0D13161EF3A4950045B9B1 /* CardView.swift */,
+				BB7510841EF5138800508980 /* OfferTableViewCell.swift */,
+				BB36A37B1EF937C4007148A1 /* HomeCollectionViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BBC411F11EF2750A00DDF316 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BBC411DC1EF265E400DDF316 /* LoginViewController.swift */,
+				BB0D131A1EF3A91F0045B9B1 /* CheckInViewController.swift */,
+				BB7510821EF5115800508980 /* OffersViewController.swift */,
+				BB36A37F1EF93837007148A1 /* HomeViewController.swift */,
+				BB247F5F1EFBC9AE00D07640 /* ProfileViewController.swift */,
+				BB1E35F01EFD185D001810F0 /* FeedbackViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BBC411F41EF28ACA00DDF316 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				BBC411F51EF28AE900DDF316 /* AsyncUser.swift */,
+				BB0D13201EF3E0220045B9B1 /* AppConfig.swift */,
+				BB7510881EF51C2C00508980 /* ServiceCaller.swift */,
+			);
+			name = Plugins;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BBC411D61EF265E400DDF316 /* OtelApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBC411EC1EF265E400DDF316 /* Build configuration list for PBXNativeTarget "OtelApp" */;
+			buildPhases = (
+				D62D1E87CC10C83913CEDBBB /* [CP] Check Pods Manifest.lock */,
+				BBC411D31EF265E400DDF316 /* Sources */,
+				BBC411D41EF265E400DDF316 /* Frameworks */,
+				BBC411D51EF265E400DDF316 /* Resources */,
+				FCC977E0CBFC9B0A790D3424 /* [CP] Embed Pods Frameworks */,
+				9C7FA248A5C4EF92D4081FC1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OtelApp;
+			productName = OtelApp;
+			productReference = BBC411D71EF265E400DDF316 /* OtelApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBC411CF1EF265E400DDF316 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Qvertz Technologies";
+				TargetAttributes = {
+					BBC411D61EF265E400DDF316 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3DX3ZFAANR;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BBC411D21EF265E400DDF316 /* Build configuration list for PBXProject "OtelApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BBC411CE1EF265E400DDF316;
+			productRefGroup = BBC411D81EF265E400DDF316 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBC411D61EF265E400DDF316 /* OtelApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBC411D51EF265E400DDF316 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBC411E81EF265E400DDF316 /* LaunchScreen.storyboard in Resources */,
+				BBC411E51EF265E400DDF316 /* Assets.xcassets in Resources */,
+				BBC411E01EF265E400DDF316 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9C7FA248A5C4EF92D4081FC1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OtelApp/Pods-OtelApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D62D1E87CC10C83913CEDBBB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FCC977E0CBFC9B0A790D3424 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OtelApp/Pods-OtelApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBC411D31EF265E400DDF316 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB36A37A1EF906F7007148A1 /* Offer.swift in Sources */,
+				BBC411F31EF2892400DDF316 /* User.swift in Sources */,
+				BB0D13211EF3E0220045B9B1 /* AppConfig.swift in Sources */,
+				BB7510891EF51C2C00508980 /* ServiceCaller.swift in Sources */,
+				BBC411E31EF265E400DDF316 /* OtelApp.xcdatamodeld in Sources */,
+				BB36A3801EF93837007148A1 /* HomeViewController.swift in Sources */,
+				BB36A37C1EF937C5007148A1 /* HomeCollectionViewCell.swift in Sources */,
+				BBC411F61EF28AE900DDF316 /* AsyncUser.swift in Sources */,
+				BB7510831EF5115800508980 /* OffersViewController.swift in Sources */,
+				BBC411DD1EF265E400DDF316 /* LoginViewController.swift in Sources */,
+				BB7510851EF5138800508980 /* OfferTableViewCell.swift in Sources */,
+				BB1E35F11EFD185D001810F0 /* FeedbackViewController.swift in Sources */,
+				BB0D13171EF3A4950045B9B1 /* CardView.swift in Sources */,
+				BB247F601EFBC9AE00D07640 /* ProfileViewController.swift in Sources */,
+				BBC411DB1EF265E400DDF316 /* AppDelegate.swift in Sources */,
+				BB0D131B1EF3A91F0045B9B1 /* CheckInViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BBC411DE1EF265E400DDF316 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBC411DF1EF265E400DDF316 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BBC411E61EF265E400DDF316 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBC411E71EF265E400DDF316 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BBC411EA1EF265E400DDF316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BBC411EB1EF265E400DDF316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BBC411ED1EF265E400DDF316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71B6014B0729DCD46D2CC6FB /* Pods-OtelApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3DX3ZFAANR;
+				INFOPLIST_FILE = OtelApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oteltechnologies.OtelApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BBC411EE1EF265E400DDF316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C13A307FE847DDEF78F08E1 /* Pods-OtelApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3DX3ZFAANR;
+				INFOPLIST_FILE = OtelApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oteltechnologies.OtelApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBC411D21EF265E400DDF316 /* Build configuration list for PBXProject "OtelApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBC411EA1EF265E400DDF316 /* Debug */,
+				BBC411EB1EF265E400DDF316 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBC411EC1EF265E400DDF316 /* Build configuration list for PBXNativeTarget "OtelApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBC411ED1EF265E400DDF316 /* Debug */,
+				BBC411EE1EF265E400DDF316 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BBC411E11EF265E400DDF316 /* OtelApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BBC411E21EF265E400DDF316 /* OtelApp.xcdatamodel */,
+			);
+			currentVersion = BBC411E21EF265E400DDF316 /* OtelApp.xcdatamodel */;
+			path = OtelApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BBC411CF1EF265E400DDF316 /* Project object */;
+}

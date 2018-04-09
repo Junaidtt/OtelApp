@@ -1,0 +1,19 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "cc9bfc8fddff893aa6afe8d9a926e715"
+build_time: [551525846, 355474000]
+inputs:
+  "/Users/sunilvg/Desktop/updation/OtelApp/Offer.swift": [551259257, 0]
+  "/Users/sunilvg/Desktop/updation/OtelApp/User.swift": [550834154, 0]
+  "/Users/sunilvg/Desktop/updation/OtelApp/AppConfig.swift": [550921652, 0]
+  "/Users/sunilvg/Desktop/updation/OtelApp/ServiceCaller.swift": [551003086, 0]
+  "/Users/sunilvg/Desktop/updation/OtelApp/HomeViewController.swift": [551443682, 0]
+  "/Users/sunilvg/Desktop/updation/OtelApp/HomeCollectionViewCell.swift": [551272688, 0]
+  "/Users/sunilvg/Desktop/updation/OtelApp/AsyncUser.swift": [550993948, 0]
+  "/Users/sunilvg/Desktop/updation/OtelApp/OffersViewController.swift": [551265442, 0]
+  "/Users/sunilvg/Desktop/updation/OtelApp/OtelApp/LoginViewController.swift": [550836938, 0]
+  "/Users/sunilvg/Desktop/updation/OtelApp/OfferTableViewCell.swift": [551003884, 0]
+  "/Users/sunilvg/Desktop/updation/OtelApp/FeedbackViewController.swift": [551525844, 0]
+  "/Users/sunilvg/Desktop/updation/OtelApp/CardView.swift": [550906342, 0]
+  "/Users/sunilvg/Desktop/updation/OtelApp/ProfileViewController.swift": [551442522, 0]
+  "/Users/sunilvg/Desktop/updation/OtelApp/OtelApp/AppDelegate.swift": [550923175, 0]
+  "/Users/sunilvg/Desktop/updation/OtelApp/CheckInViewController.swift": [551267920, 0]

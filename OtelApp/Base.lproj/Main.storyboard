@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Iz3-ed-dBt">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Check In View Controller-->
+        <scene sceneID="W9D-RK-czs">
+            <objects>
+                <viewController id="Iz3-ed-dBt" customClass="CheckInViewController" customModule="OtelApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A7B-r0-lz1"/>
+                        <viewControllerLayoutGuide type="bottom" id="LcF-Q6-05D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MBr-9w-SMG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkinBg" translatesAutoresizingMaskIntoConstraints="NO" id="nVD-Qa-cmY"/>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h4H-zM-1hr">
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="xrH-JY-Xpi">
+                                    <frame key="frameInset"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="small_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="uJx-CJ-eqI">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="90" id="UxW-Xu-V4e"/>
+                                                <constraint firstAttribute="height" constant="90" id="zDS-E1-Eep"/>
+                                            </constraints>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z5l-3C-mes" customClass="CardView" customModule="OtelApp" customModuleProvider="target">
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="8om-oB-S64">
+                                                    <subviews>
+                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter CheckIn ID here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pva-nx-YwV">
+                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="Iz3-ed-dBt" id="NHn-tv-QvX"/>
+                                                            </connections>
+                                                        </textField>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sho-wg-vfp">
+                                                            <color key="backgroundColor" red="0.02681326798" green="0.70247671570000003" blue="0.54924983439999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <size key="titleShadowOffset" width="3" height="0.0"/>
+                                                            <state key="normal" title="CheckIn">
+                                                                <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="checkInButtonTapped:" destination="Iz3-ed-dBt" eventType="touchUpInside" id="Q0a-qT-lO8"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="8om-oB-S64" firstAttribute="centerX" secondItem="z5l-3C-mes" secondAttribute="centerX" id="94k-dw-r4O"/>
+                                                <constraint firstAttribute="trailing" secondItem="8om-oB-S64" secondAttribute="trailing" constant="10" id="HeA-Qh-3gT"/>
+                                                <constraint firstAttribute="bottom" secondItem="8om-oB-S64" secondAttribute="bottom" constant="17" id="UxQ-j6-s94"/>
+                                                <constraint firstItem="8om-oB-S64" firstAttribute="centerY" secondItem="z5l-3C-mes" secondAttribute="centerY" id="abV-tB-slI"/>
+                                                <constraint firstItem="8om-oB-S64" firstAttribute="top" secondItem="z5l-3C-mes" secondAttribute="top" constant="17" id="cCZ-Sn-siS"/>
+                                                <constraint firstItem="8om-oB-S64" firstAttribute="leading" secondItem="z5l-3C-mes" secondAttribute="leading" constant="10" id="rbM-CX-uyE"/>
+                                                <constraint firstAttribute="height" constant="100" id="xfg-ty-M4j"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="z5l-3C-mes" secondAttribute="trailing" constant="8" id="68X-s1-QGB"/>
+                                        <constraint firstItem="uJx-CJ-eqI" firstAttribute="centerX" secondItem="z5l-3C-mes" secondAttribute="centerX" id="I6M-yE-Kx3"/>
+                                        <constraint firstItem="z5l-3C-mes" firstAttribute="leading" secondItem="xrH-JY-Xpi" secondAttribute="leading" constant="8" id="T0B-TT-3fS"/>
+                                        <constraint firstItem="uJx-CJ-eqI" firstAttribute="top" secondItem="xrH-JY-Xpi" secondAttribute="topMargin" constant="3" id="gb0-PC-zKY"/>
+                                        <constraint firstItem="z5l-3C-mes" firstAttribute="top" secondItem="uJx-CJ-eqI" secondAttribute="bottom" constant="-1" id="ybB-3T-K5y"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZjD-34-7Ya">
+                                <subviews>
+                                    <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXg-up-Ryc">
+                                        <color key="backgroundColor" red="0.02681326798" green="0.70247671570000003" blue="0.54924983439999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="barTintColor" red="0.02681326798" green="0.70247671570000003" blue="0.54924983439999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <textAttributes key="titleTextAttributes">
+                                            <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </textAttributes>
+                                        <items>
+                                            <navigationItem title="CheckIn" id="aqS-qD-4km"/>
+                                        </items>
+                                    </navigationBar>
+                                </subviews>
+                                <color key="backgroundColor" red="0.02681326798" green="0.70247671570000003" blue="0.54924983439999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="L91-MM-4xa"/>
+                                    <constraint firstItem="FXg-up-Ryc" firstAttribute="top" secondItem="ZjD-34-7Ya" secondAttribute="top" constant="36" id="LQl-rG-Znu"/>
+                                    <constraint firstAttribute="trailing" secondItem="FXg-up-Ryc" secondAttribute="trailing" id="hF3-HS-nem"/>
+                                    <constraint firstItem="FXg-up-Ryc" firstAttribute="leading" secondItem="ZjD-34-7Ya" secondAttribute="leading" id="i1v-7C-9qQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="FXg-up-Ryc" secondAttribute="bottom" id="xvE-JK-oaP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="h4H-zM-1hr" secondAttribute="trailing" id="0Wp-uT-2Cy"/>
+                            <constraint firstItem="nVD-Qa-cmY" firstAttribute="leading" secondItem="h4H-zM-1hr" secondAttribute="leading" id="2Z3-hC-q3a"/>
+                            <constraint firstItem="h4H-zM-1hr" firstAttribute="trailing" secondItem="nVD-Qa-cmY" secondAttribute="trailing" id="3N9-4a-mua"/>
+                            <constraint firstItem="h4H-zM-1hr" firstAttribute="leading" secondItem="MBr-9w-SMG" secondAttribute="leading" id="5bz-fv-wT6"/>
+                            <constraint firstItem="h4H-zM-1hr" firstAttribute="top" secondItem="nVD-Qa-cmY" secondAttribute="top" constant="-18" id="74y-SK-i12"/>
+                            <constraint firstItem="h4H-zM-1hr" firstAttribute="bottom" secondItem="LcF-Q6-05D" secondAttribute="top" id="88w-zq-lge"/>
+                            <constraint firstItem="ZjD-34-7Ya" firstAttribute="top" secondItem="MBr-9w-SMG" secondAttribute="top" id="Ick-qw-Ney"/>
+                            <constraint firstItem="h4H-zM-1hr" firstAttribute="top" secondItem="A7B-r0-lz1" secondAttribute="bottom" constant="61" id="NG3-u9-sdT"/>
+                            <constraint firstItem="ZjD-34-7Ya" firstAttribute="leading" secondItem="MBr-9w-SMG" secondAttribute="leading" id="bnw-PW-RGO"/>
+                            <constraint firstAttribute="trailing" secondItem="ZjD-34-7Ya" secondAttribute="trailing" id="d5Z-f3-tlR"/>
+                            <constraint firstItem="nVD-Qa-cmY" firstAttribute="bottom" secondItem="LcF-Q6-05D" secondAttribute="top" id="ibe-zf-ZfY"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="checkInFrame" destination="z5l-3C-mes" id="Wgf-9l-u7J"/>
+                        <outlet property="checkIntextField" destination="pva-nx-YwV" id="9Wv-TR-q2b"/>
+                        <segue destination="FJ8-KZ-3V7" kind="show" identifier="HomeVC" id="hv6-ND-iiL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="524-Cj-P5h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="621.73913043478262" y="120.65217391304348"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="dDu-b4-2HW">
+            <objects>
+                <viewController id="69L-b5-Uq2" customClass="HomeViewController" customModule="OtelApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H7X-YT-AnP"/>
+                        <viewControllerLayoutGuide type="bottom" id="BeO-J3-Yew"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e1r-Wj-1bo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6v1-fM-TTz" customClass="CardView" customModule="OtelApp" customModuleProvider="target">
+                                <subviews>
+                                    <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0r-Ad-zqt">
+                                        <frame key="frameInset" minY="36" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="barTintColor" red="0.02681326798" green="0.70247671570000003" blue="0.54924983439999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <textAttributes key="titleTextAttributes">
+                                            <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </textAttributes>
+                                        <items>
+                                            <navigationItem title="OtelApp" id="vAA-sh-js2">
+                                                <barButtonItem key="rightBarButtonItem" image="sos" id="11h-ow-hpZ">
+                                                    <connections>
+                                                        <action selector="sosButtonTapped:" destination="69L-b5-Uq2" id="gic-mx-yqV"/>
+                                                    </connections>
+                                                </barButtonItem>
+                                            </navigationItem>
+                                        </items>
+                                    </navigationBar>
+                                </subviews>
+                                <color key="backgroundColor" red="0.02681326798" green="0.70247671570000003" blue="0.54924983439999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="JmF-Q9-O9W"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JZL-De-ykV">
+                                <color key="backgroundColor" red="0.1843137255" green="0.25490196079999999" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="00r-do-j6N">
+                                    <size key="itemSize" width="180" height="180"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCell" id="h43-Ey-77k" customClass="HomeCollectionViewCell" customModule="OtelApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vsU-j2-5zX"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9H8-UZ-fKi">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="o71-yE-09z"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="9H8-UZ-fKi" firstAttribute="leading" secondItem="h43-Ey-77k" secondAttribute="leading" id="62K-cs-IYH"/>
+                                            <constraint firstItem="9H8-UZ-fKi" firstAttribute="top" secondItem="vsU-j2-5zX" secondAttribute="bottom" constant="4" id="ISn-hF-WIy"/>
+                                            <constraint firstItem="vsU-j2-5zX" firstAttribute="top" secondItem="h43-Ey-77k" secondAttribute="top" id="SIA-fH-Flh"/>
+                                            <constraint firstAttribute="trailing" secondItem="vsU-j2-5zX" secondAttribute="trailing" id="bpW-fe-0lx"/>
+                                            <constraint firstItem="9H8-UZ-fKi" firstAttribute="top" secondItem="vsU-j2-5zX" secondAttribute="bottom" constant="4" id="gVG-zO-XEX"/>
+                                            <constraint firstItem="vsU-j2-5zX" firstAttribute="leading" secondItem="h43-Ey-77k" secondAttribute="leading" id="gtj-4D-6RJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="9H8-UZ-fKi" secondAttribute="trailing" id="s6Y-OI-Mfg"/>
+                                            <constraint firstAttribute="bottom" secondItem="9H8-UZ-fKi" secondAttribute="bottom" constant="8" id="wgD-5j-Zn5"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="itemImage" destination="vsU-j2-5zX" id="Q2f-dK-wdC"/>
+                                            <outlet property="itemLabel" destination="9H8-UZ-fKi" id="now-c2-n8a"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="69L-b5-Uq2" id="g5v-FV-exy"/>
+                                    <outlet property="delegate" destination="69L-b5-Uq2" id="IGO-xx-ewK"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6v1-fM-TTz" firstAttribute="leading" secondItem="e1r-Wj-1bo" secondAttribute="leading" id="JXd-oH-iIU"/>
+                            <constraint firstAttribute="trailing" secondItem="JZL-De-ykV" secondAttribute="trailing" id="KXW-rS-jC8"/>
+                            <constraint firstItem="BeO-J3-Yew" firstAttribute="top" secondItem="JZL-De-ykV" secondAttribute="bottom" id="SM3-OX-Shy"/>
+                            <constraint firstItem="6v1-fM-TTz" firstAttribute="top" secondItem="e1r-Wj-1bo" secondAttribute="top" id="UMb-su-69T"/>
+                            <constraint firstItem="JZL-De-ykV" firstAttribute="top" secondItem="6v1-fM-TTz" secondAttribute="bottom" id="pIu-Rs-nRy"/>
+                            <constraint firstAttribute="trailing" secondItem="6v1-fM-TTz" secondAttribute="trailing" id="rRf-MX-bRO"/>
+                            <constraint firstItem="JZL-De-ykV" firstAttribute="leading" secondItem="e1r-Wj-1bo" secondAttribute="leading" id="wea-ug-VDk"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="A3w-dE-2Pr"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="menuCollectionView" destination="JZL-De-ykV" id="RvZ-wf-9OT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NLB-FM-ulA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3181.5999999999999" y="-247.82608695652175"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="1LR-ZF-87q">
+            <objects>
+                <viewController id="4kH-wM-kBU" customClass="ProfileViewController" customModule="OtelApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hSE-uQ-NJp"/>
+                        <viewControllerLayoutGuide type="bottom" id="8qr-tI-Vqi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8yT-bD-wim">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gfj-ct-9Jg" customClass="CardView" customModule="OtelApp" customModuleProvider="target">
+                                <subviews>
+                                    <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIE-kv-8w6">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="BfF-BY-5hl"/>
+                                        </constraints>
+                                        <color key="barTintColor" red="0.02681326798" green="0.70247671570000003" blue="0.54924983439999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <textAttributes key="titleTextAttributes">
+                                            <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </textAttributes>
+                                        <items>
+                                            <navigationItem title="Profile" id="mfc-mK-c0G"/>
+                                        </items>
+                                    </navigationBar>
+                                </subviews>
+                                <color key="backgroundColor" red="0.02681326798" green="0.70247671570000003" blue="0.54924983439999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="sIE-kv-8w6" firstAttribute="leading" secondItem="gfj-ct-9Jg" secondAttribute="leading" id="UsW-TD-Pl0"/>
+                                    <constraint firstAttribute="trailing" secondItem="sIE-kv-8w6" secondAttribute="trailing" id="eaU-6T-ix7"/>
+                                    <constraint firstAttribute="height" constant="80" id="eef-iY-8fd"/>
+                                    <constraint firstAttribute="bottom" secondItem="sIE-kv-8w6" secondAttribute="bottom" id="pp9-er-zVb"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WlX-SH-6kq" customClass="CardView" customModule="OtelApp" customModuleProvider="target">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkinBg" translatesAutoresizingMaskIntoConstraints="NO" id="ZDz-72-UXe">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="169" id="2kb-l9-xbv"/>
+                                        </constraints>
+                                    </imageView>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oHb-21-UBM">
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="bqm-T8-ji3">
+                                            <frame key="frameInset"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sachin" translatesAutoresizingMaskIntoConstraints="NO" id="vDJ-XS-hbF">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="120" id="5Hq-u7-fxa"/>
+                                                        <constraint firstAttribute="width" constant="120" id="qwv-tF-Uwn"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sachin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyG-D9-sKf">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="FxE-Tk-BR0"/>
+                                                        <constraint firstAttribute="width" constant="300" id="U6G-vm-JyD"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="vDJ-XS-hbF" firstAttribute="centerY" secondItem="bqm-T8-ji3" secondAttribute="centerY" id="LPy-Zu-LWm"/>
+                                                <constraint firstItem="yyG-D9-sKf" firstAttribute="top" secondItem="vDJ-XS-hbF" secondAttribute="bottom" constant="3" id="eFg-4J-KWA"/>
+                                                <constraint firstItem="vDJ-XS-hbF" firstAttribute="centerX" secondItem="bqm-T8-ji3" secondAttribute="centerX" id="hHx-cS-Q7t"/>
+                                                <constraint firstItem="yyG-D9-sKf" firstAttribute="centerX" secondItem="bqm-T8-ji3" secondAttribute="centerX" id="ucu-KU-pS0"/>
+                                            </constraints>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="185" id="BJb-iE-j9D"/>
+                                        </constraints>
+                                        <blurEffect style="light"/>
+                                    </visualEffectView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ZDz-72-UXe" firstAttribute="top" secondItem="WlX-SH-6kq" secondAttribute="top" constant="8" id="78Q-SL-8e3"/>
+                                    <constraint firstItem="ZDz-72-UXe" firstAttribute="leading" secondItem="WlX-SH-6kq" secondAttribute="leading" constant="8" id="DKk-RD-jKY"/>
+                                    <constraint firstItem="oHb-21-UBM" firstAttribute="top" secondItem="WlX-SH-6kq" secondAttribute="top" id="eot-FI-ozW"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZDz-72-UXe" secondAttribute="bottom" constant="8" id="ixG-ZB-6nK"/>
+                                    <constraint firstItem="oHb-21-UBM" firstAttribute="leading" secondItem="WlX-SH-6kq" secondAttribute="leading" id="kWw-AH-LGc"/>
+                                    <constraint firstAttribute="height" constant="185" id="qGe-Zv-0EC"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZDz-72-UXe" secondAttribute="trailing" constant="8" id="ucS-6f-cTY"/>
+                                    <constraint firstAttribute="trailing" secondItem="oHb-21-UBM" secondAttribute="trailing" id="vpZ-aB-Oh5"/>
+                                    <constraint firstAttribute="bottom" secondItem="oHb-21-UBM" secondAttribute="bottom" id="wM7-oO-Wvs"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0WR-4Q-i8v" customClass="CardView" customModule="OtelApp" customModuleProvider="target">
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bTD-Io-hfp">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProfileCell" id="HHq-xc-REH">
+                                                <rect key="frame" x="0.0" y="28" width="394" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HHq-xc-REH" id="F9Y-KK-018">
+                                                    <frame key="frameInset" width="394" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="bTD-Io-hfp" secondAttribute="bottom" id="6YQ-bv-NTY"/>
+                                    <constraint firstAttribute="trailing" secondItem="bTD-Io-hfp" secondAttribute="trailing" id="RhA-v8-yVo"/>
+                                    <constraint firstItem="bTD-Io-hfp" firstAttribute="leading" secondItem="0WR-4Q-i8v" secondAttribute="leading" id="WfE-W5-p0c"/>
+                                    <constraint firstItem="bTD-Io-hfp" firstAttribute="top" secondItem="0WR-4Q-i8v" secondAttribute="top" id="tLu-D7-T5C"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0WR-4Q-i8v" firstAttribute="top" secondItem="WlX-SH-6kq" secondAttribute="bottom" constant="8" id="3qe-8h-C02"/>
+                            <constraint firstAttribute="trailing" secondItem="WlX-SH-6kq" secondAttribute="trailing" constant="10" id="7rJ-1f-K4c"/>
+                            <constraint firstItem="0WR-4Q-i8v" firstAttribute="leading" secondItem="8yT-bD-wim" secondAttribute="leading" constant="10" id="Woe-l3-Fjv"/>
+                            <constraint firstAttribute="trailing" secondItem="gfj-ct-9Jg" secondAttribute="trailing" id="X1P-nB-yjE"/>
+                            <constraint firstItem="gfj-ct-9Jg" firstAttribute="leading" secondItem="8yT-bD-wim" secondAttribute="leading" id="XIg-in-Dav"/>
+                            <constraint firstItem="WlX-SH-6kq" firstAttribute="top" secondItem="gfj-ct-9Jg" secondAttribute="bottom" constant="10" id="aZD-Uc-WnA"/>
+                            <constraint firstAttribute="trailing" secondItem="0WR-4Q-i8v" secondAttribute="trailing" constant="10" id="gWO-yB-MNo"/>
+                            <constraint firstItem="8qr-tI-Vqi" firstAttribute="top" secondItem="0WR-4Q-i8v" secondAttribute="bottom" constant="8" id="lLM-Nl-g2S"/>
+                            <constraint firstItem="WlX-SH-6kq" firstAttribute="leading" secondItem="8yT-bD-wim" secondAttribute="leading" constant="10" id="pUu-ec-hHL"/>
+                            <constraint firstItem="gfj-ct-9Jg" firstAttribute="top" secondItem="8yT-bD-wim" secondAttribute="top" id="z4c-fc-va5"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="user" id="SUS-0J-lqj"/>
+                    <connections>
+                        <outlet property="profileImage" destination="vDJ-XS-hbF" id="pVZ-km-uaH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WYk-8Z-0cY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2808.75" y="475.35211267605632"/>
+        </scene>
+        <!--Offers-->
+        <scene sceneID="KgU-tf-pnl">
+            <objects>
+                <viewController id="ngQ-5p-dew" customClass="OffersViewController" customModule="OtelApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kZP-K9-u93"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ae4-HN-rTm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jTp-4S-jum">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="109" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vlw-sy-5LV">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="OfferCell" rowHeight="109" id="CsY-3m-T21" customClass="OfferTableViewCell" customModule="OtelApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="394" height="109"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CsY-3m-T21" id="eAf-zQ-GVZ">
+                                            <frame key="frameInset" width="394" height="108"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zav-Kd-zWk" customClass="CardView" customModule="OtelApp" customModuleProvider="target">
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1om-co-BoK">
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="93" id="bsb-VK-RJE"/>
+                                                                <constraint firstAttribute="height" constant="85" id="s0q-ql-Uj1"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dh-PO-8sB">
+                                                            <frame key="frameInset" minX="105" minY="8" height="100.00%" maxX="8"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="1om-co-BoK" firstAttribute="leading" secondItem="Zav-Kd-zWk" secondAttribute="leading" id="1WY-Fu-vse"/>
+                                                        <constraint firstItem="1om-co-BoK" firstAttribute="top" secondItem="Zav-Kd-zWk" secondAttribute="top" constant="6" id="P6b-7A-3LZ"/>
+                                                        <constraint firstAttribute="bottom" secondItem="1om-co-BoK" secondAttribute="bottom" constant="1" id="S7x-MI-sgt"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Zav-Kd-zWk" firstAttribute="top" secondItem="eAf-zQ-GVZ" secondAttribute="top" id="LS4-Uh-4Ju"/>
+                                                <constraint firstItem="Zav-Kd-zWk" firstAttribute="leading" secondItem="eAf-zQ-GVZ" secondAttribute="leading" id="ehx-j6-uXa"/>
+                                                <constraint firstAttribute="trailing" secondItem="Zav-Kd-zWk" secondAttribute="trailing" id="t1U-mA-ZAC"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="offerImage" destination="1om-co-BoK" id="KXY-rS-n6r"/>
+                                            <outlet property="offerLabel" destination="3dh-PO-8sB" id="IfT-by-IUt"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ngQ-5p-dew" id="ZbE-z6-u0h"/>
+                                    <outlet property="delegate" destination="ngQ-5p-dew" id="FHc-KZ-kqo"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v7t-6R-ahI" customClass="CardView" customModule="OtelApp" customModuleProvider="target">
+                                <subviews>
+                                    <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACn-Jm-nQS">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Lib-O3-r8A"/>
+                                        </constraints>
+                                        <color key="barTintColor" red="0.02681326798" green="0.70247671570000003" blue="0.54924983439999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <textAttributes key="titleTextAttributes">
+                                            <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </textAttributes>
+                                        <items>
+                                            <navigationItem title="Offers" id="ULe-Am-a9O"/>
+                                        </items>
+                                    </navigationBar>
+                                </subviews>
+                                <color key="backgroundColor" red="0.02681326798" green="0.70247671570000003" blue="0.54924983439999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="E5y-Hd-NVD"/>
+                                    <constraint firstItem="ACn-Jm-nQS" firstAttribute="leading" secondItem="v7t-6R-ahI" secondAttribute="leading" id="JaO-b4-T2Z"/>
+                                    <constraint firstAttribute="trailing" secondItem="ACn-Jm-nQS" secondAttribute="trailing" id="ScH-Yo-u29"/>
+                                    <constraint firstAttribute="bottom" secondItem="ACn-Jm-nQS" secondAttribute="bottom" id="oov-eX-eS4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vlw-sy-5LV" firstAttribute="top" secondItem="v7t-6R-ahI" secondAttribute="bottom" constant="2" id="2SY-s5-6iw"/>
+                            <constraint firstItem="vlw-sy-5LV" firstAttribute="leading" secondItem="jTp-4S-jum" secondAttribute="leading" constant="10" id="2tQ-9n-FvL"/>
+                            <constraint firstAttribute="trailing" secondItem="vlw-sy-5LV" secondAttribute="trailing" constant="10" id="Aev-2b-sRl"/>
+                            <constraint firstAttribute="trailing" secondItem="v7t-6R-ahI" secondAttribute="trailing" id="LHO-6d-6UN"/>
+                            <constraint firstItem="v7t-6R-ahI" firstAttribute="top" secondItem="jTp-4S-jum" secondAttribute="top" id="VEa-dK-OlE"/>
+                            <constraint firstItem="Ae4-HN-rTm" firstAttribute="top" secondItem="vlw-sy-5LV" secondAttribute="bottom" id="orm-el-9y5"/>
+                            <constraint firstItem="v7t-6R-ahI" firstAttribute="leading" secondItem="jTp-4S-jum" secondAttribute="leading" id="ryd-bX-l3H"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Offers" image="offer" id="Ut7-0K-p6p"/>
+                    <connections>
+                        <outlet property="offerTableView" destination="vlw-sy-5LV" id="zJ0-Q1-m5F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vu3-mn-3tC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1504.3478260869567" y="1217.9347826086957"/>
+        </scene>
+        <!--Feedback-->
+        <scene sceneID="gKi-KN-W9h">
+            <objects>
+                <viewController id="Uu7-IG-Biy" customClass="FeedbackViewController" customModule="OtelApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fex-lJ-rH8"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dqi-Mt-xZE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gxm-TL-CdV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Px2-DO-2Cd" customClass="CardView" customModule="OtelApp" customModuleProvider="target">
+                                <subviews>
+                                    <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ny-F6-9DA">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Brc-hp-VxF"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="barTintColor" red="0.02681326798" green="0.70247671570000003" blue="0.54924983439999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <textAttributes key="titleTextAttributes">
+                                            <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </textAttributes>
+                                        <items>
+                                            <navigationItem title="Feedback" id="juX-0i-oGN"/>
+                                        </items>
+                                    </navigationBar>
+                                </subviews>
+                                <color key="backgroundColor" red="0.02681326798" green="0.70247671570000003" blue="0.54924983439999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="7ny-F6-9DA" firstAttribute="leading" secondItem="Px2-DO-2Cd" secondAttribute="leading" id="1QN-ku-ola"/>
+                                    <constraint firstAttribute="bottom" secondItem="7ny-F6-9DA" secondAttribute="bottom" id="VLq-uu-HT3"/>
+                                    <constraint firstAttribute="trailing" secondItem="7ny-F6-9DA" secondAttribute="trailing" id="yxN-uO-Rd2"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fey-x4-3P1" customClass="CardView" customModule="OtelApp" customModuleProvider="target">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FRd-DM-TT8" customClass="CardView" customModule="OtelApp" customModuleProvider="target">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72c-HQ-scz">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="eX1-Ty-eJp"/>
+                                                    <constraint firstAttribute="height" constant="30" id="fqt-Ig-zfx"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                                <state key="normal" title="Next">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="72c-HQ-scz" secondAttribute="trailing" constant="8" id="F33-f6-00Z"/>
+                                            <constraint firstAttribute="bottom" secondItem="72c-HQ-scz" secondAttribute="bottom" constant="8" id="PKK-RP-lZe"/>
+                                            <constraint firstItem="72c-HQ-scz" firstAttribute="top" secondItem="FRd-DM-TT8" secondAttribute="top" constant="8" id="rwL-ob-YUL"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.How was Our Service?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXb-JU-XOB">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="0It-1v-vzZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pT2-Sb-AAZ" customClass="DLRadioButton">
+                                        <frame key="frameInset" minX="8" minY="95" width="58" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Good"/>
+                                        <state key="highlighted" title="Good"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="iconOnRight" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ngs-n3-VgT" customClass="DLRadioButton">
+                                        <frame key="frameInset" minX="8" minY="55" width="58" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Poor"/>
+                                        <connections>
+                                            <action selector="radioButtontapped:" destination="Uu7-IG-Biy" eventType="touchUpInside" id="elX-eR-9sY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="HXb-JU-XOB" secondAttribute="trailing" constant="8" id="fBR-Tg-5Sy"/>
+                                    <constraint firstItem="FRd-DM-TT8" firstAttribute="leading" secondItem="Fey-x4-3P1" secondAttribute="leading" id="jNX-4P-B9b"/>
+                                    <constraint firstItem="HXb-JU-XOB" firstAttribute="top" secondItem="Fey-x4-3P1" secondAttribute="top" constant="22" id="r0f-JH-16y"/>
+                                    <constraint firstAttribute="trailing" secondItem="FRd-DM-TT8" secondAttribute="trailing" id="tjz-8S-T2o"/>
+                                    <constraint firstAttribute="bottom" secondItem="FRd-DM-TT8" secondAttribute="bottom" id="wO7-tE-CHn"/>
+                                    <constraint firstItem="HXb-JU-XOB" firstAttribute="leading" secondItem="Fey-x4-3P1" secondAttribute="leading" constant="8" id="ycq-ln-8LH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fey-x4-3P1" firstAttribute="leading" secondItem="gxm-TL-CdV" secondAttribute="leadingMargin" constant="-8" id="6T6-0r-TWl"/>
+                            <constraint firstItem="Px2-DO-2Cd" firstAttribute="leading" secondItem="gxm-TL-CdV" secondAttribute="leading" id="9AU-RS-Uwf"/>
+                            <constraint firstItem="Px2-DO-2Cd" firstAttribute="top" secondItem="gxm-TL-CdV" secondAttribute="top" id="DrZ-1W-79Q"/>
+                            <constraint firstItem="Fey-x4-3P1" firstAttribute="top" secondItem="gxm-TL-CdV" secondAttribute="top" constant="88" id="EiM-FO-1fr"/>
+                            <constraint firstItem="Dqi-Mt-xZE" firstAttribute="top" secondItem="Fey-x4-3P1" secondAttribute="bottom" constant="8" symbolic="YES" id="Wkg-PP-d1R"/>
+                            <constraint firstItem="Fey-x4-3P1" firstAttribute="centerX" secondItem="gxm-TL-CdV" secondAttribute="centerX" id="Wmo-5l-eV1"/>
+                            <constraint firstItem="Fey-x4-3P1" firstAttribute="top" secondItem="Px2-DO-2Cd" secondAttribute="bottom" constant="8" symbolic="YES" id="YLI-zC-0qz"/>
+                            <constraint firstItem="Fey-x4-3P1" firstAttribute="centerX" secondItem="Px2-DO-2Cd" secondAttribute="centerX" id="gFI-ww-W9g"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Feedback" image="feedback" id="7e6-27-rci"/>
+                    <connections>
+                        <outlet property="questionLabel" destination="HXb-JU-XOB" id="Pa9-QI-BAc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UXO-nm-DbD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2341" y="-1447"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="lEg-9f-ASr">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="FJ8-KZ-3V7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="dfP-20-DdL">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="69L-b5-Uq2" kind="relationship" relationship="viewControllers" id="ZCq-d5-xCV"/>
+                        <segue destination="4kH-wM-kBU" kind="relationship" relationship="viewControllers" id="Rsj-Cj-dPf"/>
+                        <segue destination="ngQ-5p-dew" kind="relationship" relationship="viewControllers" id="9Nd-fo-EFO"/>
+                        <segue destination="Uu7-IG-Biy" kind="relationship" relationship="viewControllers" id="2ni-BN-h1f"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sDp-xL-BXZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1586" y="121"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkinBg" width="600" height="400"/>
+        <image name="feedback" width="25" height="25"/>
+        <image name="home" width="25" height="25"/>
+        <image name="offer" width="25" height="25"/>
+        <image name="sachin" width="105" height="79"/>
+        <image name="small_Logo" width="50" height="50"/>
+        <image name="sos" width="24" height="24"/>
+        <image name="user" width="25" height="25"/>
+    </resources>
+</document>
